@@ -1,0 +1,7 @@
+record:
+  image: nachochip/ffmpeg:latest
+  working_dir: /usr/src/app/
+  entrypoint: ./run.sh
+  volumes:
+    - .:/usr/src/app
+
