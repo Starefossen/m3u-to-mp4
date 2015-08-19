@@ -25,4 +25,3 @@ for path in ${PLAYLISTS_DIR}/*; do
 
   echo "Everything is done!"
 done
-
