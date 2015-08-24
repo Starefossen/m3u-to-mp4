@@ -7,7 +7,8 @@ function record {
   local -r IN=$1
   local -r OUT=$2
 
-  ffmpeg -re -i "${IN}" -c copy -bsf:a aac_adtstoasc "${OUT}"
+  #ffmpeg -re -i "${IN}" -c copy -bsf:a aac_adtstoasc "${OUT}"
+  ffmpeg -i "${IN}" -c copy -bsf:a aac_adtstoasc "${OUT}"
 }
 
 for path in ${PLAYLISTS_DIR}/*; do
